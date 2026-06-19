@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz App</title>
+<link rel="icon" type="image/png" href="quiz.jpg">
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SUBJECT SCREEN -->
+<div id="subjectScreen">
+    <h1>Select Subject</h1>
+
+    <div class="grid">
+        <button onclick="selectSubject('html')">HTML</button>
+        <button onclick="selectSubject('css')">CSS</button>
+        <button onclick="selectSubject('js')">JavaScript</button>
+        <button onclick="selectSubject('react')">React</button>
+        <button onclick="selectSubject('python')">Python</button>
+        <button onclick="selectSubject('sql')">SQL</button>
+    </div>
+</div>
+
+<!-- DIFFICULTY SCREEN -->
+<div id="difficultyScreen" class="hidden">
+    <h1>Select Difficulty</h1>
+
+    <div class="difficulty">
+        <button onclick="startQuiz('easy')">Easy</button>
+        <button onclick="startQuiz('medium')">Intermediate</button>
+        <button onclick="startQuiz('hard')">Hard</button>
+    </div>
+</div>
+
+<!-- QUIZ SCREEN -->
+<div id="quizScreen" class="hidden">
+
+    <div class="top">
+        <div>Score: <span id="score">0</span></div>
+        <div>Time: <span id="time">15</span>s</div>
+    </div>
+
+    <div class="bar">
+        <div id="progress"></div>
+    </div>
+
+    <h2 id="question"></h2>
+    <div id="options"></div>
+
+    <button id="nextBtn">Next</button>
+</div>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

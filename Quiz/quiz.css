@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#c9b6e4,#e0c3fc,#fbc2eb);
+}
+
+.container{
+    width:600px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:20px;
+}
+
+/* BUTTON */
+button{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#7b2cbf;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#5a189a;
+}
+
+/* DIFFICULTY */
+.difficulty{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:25px;
+}
+
+.hidden{ display:none; }
+
+/* TOP */
+.top{
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* PROGRESS */
+.bar{
+    width:100%;
+    height:10px;
+    background:#eee;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+#progress{
+    width:0%;
+    height:100%;
+    background:#7b2cbf;
+}
+
+/* OPTIONS */
+.option{
+    display:block;
+    width:100%;
+    margin:8px 0;
+    padding:14px;
+    background:linear-gradient(135deg,#a694be,#fbc2eb);
+    border-radius:10px;
+    text-align:left;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#d6b2fc;
+}
+
+/* ANSWERS */
+.correct{ 
+  background:#49aa6d !important;
+}
+.wrong{ background:#df6666 !important; }
