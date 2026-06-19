@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+
+    background:linear-gradient(
+        135deg,
+        #c9b6e4,
+        #e0c3fc,
+        #fbc2eb
+    );
+}
+
+.container{
+    width:550px;
+
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+    border-radius:25px;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    color:#3b2f4a;
+    margin-bottom:15px;
+    letter-spacing:1px;
+}
+
+.counter{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:18px;
+    color:#4a3b5f;
+    font-weight:600;
+}
+
+.form input,
+.form select,
+.form button{
+    width:100%;
+    height:50px;
+    margin:8px 0;
+    border-radius:12px;
+    font-size:15px;
+}
+
+.form input,
+.form select{
+    border:none;
+    padding:0 15px;
+    outline:none;
+    background:rgba(255,255,255,0.8);
+    color:#333;
+}
+
+.form select{
+    cursor:pointer;
+}
+
+.form button{
+    border:none;
+    cursor:pointer;
+    color:white;
+    font-weight:600;
+
+    background:linear-gradient(
+        135deg,
+        #a18cd1,
+        #fbc2eb
+    );
+
+    transition:0.3s;
+}
+
+.form button:hover{
+    transform:translateY(-2px);
+}
+
+.task{
+    background:rgba(255,255,255,0.35);
+    margin-top:15px;
+    padding:15px;
+    border-radius:15px;
+    text-align:left;
+}
+
+.task h3{
+    color:#3b2f4a;
+    margin-bottom:8px;
+}
+
+.task p{
+    color:#4d405d;
+    margin:5px 0;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+    margin-top:12px;
+}
+
+.edit,
+.delete{
+    flex:1;
+    border:none;
+    height:42px;
+    border-radius:12px;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.25s;
+}
+
+.edit{
+    background:linear-gradient(
+        135deg,
+        #43e97b,
+        #38f9d7
+    );
+}
+
+.delete{
+    background:linear-gradient(
+        135deg,
+        #ff6a88,
+        #ff99ac
+    );
+}
+
+.edit:hover,
+.delete:hover{
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
