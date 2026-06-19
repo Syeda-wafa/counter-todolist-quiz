@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do App</title>
+    <link rel="icon" type="image/png" href="todo.jpg">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>To-Do App</h1>
+
+    <div class="counter">
+        Total Tasks: <span id="counter">0</span>
+    </div>
+
+    <div class="form">
+
+        <input type="text" id="name" placeholder="Task Name">
+
+        <input type="text" id="desc" placeholder="Description">
+
+        <select id="priority">
+            <option value="" disabled selected>Select Priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <input type="date" id="date">
+
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div id="taskList"></div>
+
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>
