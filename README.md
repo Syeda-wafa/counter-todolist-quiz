@@ -62,5 +62,3 @@ counter-todolist-quiz/
 └── quiz/
 ```
 
-## Author
-Made by **Wafa**
